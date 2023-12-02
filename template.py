@@ -1,16 +1,19 @@
 import unittest
 
-def parse1(input):
+def parseInput(input):
     result = 0
     for line in input.splitlines():
-        assert(False)
+        pass
     return result
 
+
+def parse1(input):
+    data = parseInput(input)
+    return 0
+
 def parse2(input):
-    result = 0
-    for line in input.splitlines():
-        assert(False)
-    return result
+    data = parseInput(input)
+    return 0
 
 class Test(unittest.TestCase):
     def test_part1(self):
@@ -22,8 +25,8 @@ class Test(unittest.TestCase):
 
 unittest.main(exit=False)
 
-with open('input.txt') as file:
+with open('input2.txt') as file:
     data = file.read()
-    print(parse1(data))
-    print(parse2(data))
+    print("Part 1:", parse1(data))
+    print("Part 2:", parse2(data))
 
