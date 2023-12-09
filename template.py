@@ -25,7 +25,7 @@ class Test(unittest.TestCase):
 
 unittest.main(exit=False)
 
-with open('input2.txt') as file:
+with open('input.txt') as file:
     data = file.read()
     print("Part 1:", parse1(data))
     print("Part 2:", parse2(data))
