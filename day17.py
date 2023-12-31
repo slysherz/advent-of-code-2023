@@ -38,21 +38,6 @@ def printPath(data, path):
         table += '\n'
     print(table)
 
-def setCache(cache, node, score):
-    path, heat_left = node
-    key = tuple(path[-4:])
-    cache[key] = (heat_left, score)
-    return cache[key]
-    
-def getCache(cache, node):
-    path, heat_left = node
-    key = tuple(path[-4:])
-    if key in cache:
-        hl, val = cache[key]
-        if hl >= heat_left:
-            return (hl, val)
-    return None
-
 def solveNode(data, node, goal, cache):
     curr_heat, pos, dir_in_row, last_dir, path = node
     if pos == goal:
