@@ -58,7 +58,6 @@ def solve(data):
     result += 1
     return result
 
-
 def parse1(input):
     data = parseInput1(input)
     return solve(data)
@@ -116,5 +115,3 @@ with open('input18.txt') as file:
     data = file.read()
     print("Part 1:", parse1(data))
     print("Part 2:", parse2(data))
-
-# 40714
