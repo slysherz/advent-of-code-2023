@@ -1,6 +1,5 @@
 import unittest
-import bisect 
-import random
+import bisect
 
 def parseInput(input):
     result = []
